@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    cursor: pointer;
+    top: 0;
+   
+}
+.navlist{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.navlist li {
+    list-style-type: none;
+    padding: 20px 30px;
+
+}
+.navlist li a{
+   color: white;
+    text-decoration: none;
+    font-size: 3vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navlist li a:hover{
+    background-color: rebeccapurple;
+}
+.rightnav{
+    width: 50%;
+    /* background-color: purple; */
+    text-align: right;
+}
+#btn{
+    padding: 5px;
+    border: 2px solid black;
+}
+.background{
+    background:  rgba(0, 0, 0, 0.7) url('book.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.boxmain{
+display: flex ;
+justify-content: center;
+align-items: center;
+color: white;
+font-family:  'Secular One', sans-serif;
+font-size: 20px;
+padding: 10px;
+max-width: 50%;
+margin: auto;
+}
+.firstsection{
+    height: 100vh;
+}
+.secondhalf{
+    display: flex;
+    
+   padding: 10px;
+   margin: 10px;
+   height: 30vh;
+   width: 30vw;
+}
+.button{
+    padding: 5px 100px;
+    margin: 0;
+}
+#btnn{
+    border: 2px solid white;
+}
+.btn{
+    border: 1px solid white;
+    font-size: 18px;
+    background: none;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.secondhalf{
+    width: 20%;
+  
+}
+.secondhalf img{
+    border: 2px solid white;
+    border-radius: 200px;
+    height: 20vh;
+    width: 20vw;
+}
+.textbig{
+    font-size: 41px;
+}
+.textsmall{
+    font-size: 18px;
+}
+.secondsection{
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    /* color: white; */
+    margin: auto;
+    width: 80%;
+    padding:30px;
+}
+.thirdsection{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: auto;
+    width: 80%;
+    padding:30px;
+}
+.thumbnail img{
+  width: 40vw;
+  height: 40vh;
+}
+.para{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.secondsection,.thirdsection{
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact{
+    background-color: rgb(235, 249, 249);
+    height: 70vh;
+
+}
+.text{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.form{
+    max-width: 300px;
+    margin: auto;
+    width: 100%;
+    padding :20px;
+    font-size: 19px;
+    text-align: center;
+    
+}
+.burger{
+    display: none;
+    cursor: pointer;
+   position: absolute;
+ 
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.line{
+    width: 40px;
+    height:8px;
+    background-color: white;
+    margin:3px 3px;
+}
+@media only screen and (max-width:949px){
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+}
